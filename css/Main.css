@@ -1,0 +1,138 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;500;700&display=swap');
+
+:root {
+  --pr2: #f3f6fde3;
+  --pr3: #23272e;
+  --pr4: #f6f6f6;
+  --pr5: #30d699;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka', sans-serif;
+}
+
+body {
+  background: var(--pr3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+button {
+  background: var(--pr3);
+  letter-spacing: .1rem;
+  border-radius: 1rem;
+  color: var(--pr4);
+  font-weight: 700;
+  cursor: pointer;
+  padding: .9rem;
+  outline: none;
+  border: none;
+}
+
+i.bi-clipboard-check-fill {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  background: transparent;
+  text-align: center;
+  width: 90px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+label {
+  background: var(--pr3);
+  border-radius: 1rem;
+  color: var(--pr4);
+  cursor: pointer;
+  padding: .8rem;
+}
+
+label:active {
+  transform: scale(.9);
+  background: var(--pr5);
+}
+
+input[type="text"].copy {
+  color: var(--pr4);
+  outline: none;
+  border: none;
+}
+
+.container {
+  box-shadow: 0 0 10px rgba(19, 18, 18, 0.493);
+  background: var(--pr2);
+  border-radius: 1rem;
+  max-width: 1220px;
+  width: 90%;
+  padding: 1rem;
+  margin: auto 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.title {
+  letter-spacing: .1rem;
+  text-align: center;
+  color: var(--pr3);
+  padding: 1rem;
+}
+
+#container-imgs {
+  display: grid;
+  place-items: center;
+}
+
+#image-upload {
+  box-shadow: 0 0 10px rgba(19, 18, 18, 0.384);
+  border-radius: 1rem;
+}
+
+#load {
+  letter-spacing: 1px;
+  color: var(--pr3);
+}
+
+.upload-container {
+  margin-top: .1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem;
+  width: 100%;
+}
+
+.container_colors {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color_selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  color: var(--pr4);
+  font-size: .9rem;
+  flex: 1 1 50px;
+  padding: .8rem;
+  outline: none;
+  border: none;
+}

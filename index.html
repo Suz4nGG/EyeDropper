@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/Main.css">
+  <title>Extract Colors</title>
+</head>
+<body id="body">
+  <div class="container" id="container">
+  <h1 class="title">Selector de colores</h1>
+    <div id="container-imgs">
+      <img src="" alt="" id="image-upload">
+      <h2 id="load">Carga tu imagen</h2>
+    </div>
+    <div class="upload-container">
+      <input
+        type="file"
+        id="file-input"
+        accept="image/png, image/jpg image/jpeg"
+        onchange="upload()"
+      />
+      <label
+        id="upload-image"
+        for="file-input"
+        title="Upload Image"
+      >
+        <i class="bi bi-upload"></i>
+      </label>
+      <button onclick="dropper()">
+        Eyedropper
+        <i class="bi bi-eyedropper"></i>
+      </button>
+    </div>
+    <div
+      class="container_colors"
+      id="container-colors">
+    </div>
+  </div>
+  <script src="./js/Colors.js"></script>
+</body>
+</html>
